@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# large tools downloaded only for local testing -- the deployed app
+# installs lilypond and ffmpeg via packages.txt instead
+tools/
+
+# scratch output from dev/run_pipeline_tests.py
+dev/test_output/
+dev/test_audio_bad/
+
+.streamlit/secrets.toml
