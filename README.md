@@ -67,6 +67,10 @@ git config --global user.email "you@example.com"
 
 ### Step 4: Upload this project to your new GitHub repository
 
+This project folder has already been set up as a local Git project with everything saved in a first "commit" (a
+snapshot of all the files). You just need to connect it to the empty repository you created on GitHub and push
+it there.
+
 Open your terminal (Terminal on Mac, Git Bash on Windows) and navigate into this project folder. If this folder
 is at, for example, `Desktop/ArnellCoding/audio-to-sheet-music`, type:
 
@@ -75,14 +79,11 @@ cd Desktop/ArnellCoding/audio-to-sheet-music
 ```
 
 Then copy and paste these commands **one at a time**, pressing Enter after each one. Replace the URL in the
-`git remote add origin` line with the URL GitHub showed you in Step 2.
+first line with the URL GitHub showed you in Step 2.
 
 ```
-git init
-git add app.py pipeline.py requirements.txt packages.txt runtime.txt README.md .gitignore .streamlit dev
-git commit -m "Initial version of AI Audio to Sheet Music Generator"
-git branch -M main
 git remote add origin https://github.com/your-username/audio-to-sheet-music.git
+git branch -M main
 git push -u origin main
 ```
 
