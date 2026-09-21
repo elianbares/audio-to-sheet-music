@@ -18,8 +18,8 @@ os.environ["LILYPOND_PATH"] = os.path.join(
 
 import pipeline  # noqa: E402
 
-TEST_DIR = os.path.join(os.path.dirname(__file__), "test_audio")
-OUT_DIR = os.path.join(os.path.dirname(__file__), "test_output")
+TEST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_audio")
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "test_output")
 
 only = sys.argv[1] if len(sys.argv) > 1 else None
 
